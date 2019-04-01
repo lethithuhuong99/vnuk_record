@@ -9,13 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
- 	<servlet-name> servletHiWorld </servlet-name>
- 	<servlet-class> vn.edu.vnuk.record.servlet.HiWorld</servlet-class>
+  
+   <servlet>
+ 	<servlet-name> servletMyStudies </servlet-name>
+ 	<servlet-class> vn.edu.vnuk.record.servlet.MyStudies</servlet-class>
  </servlet>
  <servlet-mapping>
-	<servlet-name> servletHiworld</servlet-name>
-	<url-pattern> /hi </url-pattern>
+	<servlet-name> servletMyStudies</servlet-name>
+	<url-pattern> /studies</url-pattern>
  </servlet-mapping>
 </web-app>
 
