@@ -43,13 +43,13 @@ public class MyStudies extends HttpServlet{
 		out.println("<td> 2017-Now </td>");		
 		out.println("<td> VNUK University </td>");	
 		out.println("<td > Đà Nẵng </td>");
-		out.println("<td rowspan = \"5\"> Viet Nam </td>");
+		out.println("<td rowspan = \"5\"> Việt Nam </td>");
 		out.println("</tr>");
 		
 		out.println("<tr>");
 		out.println("<td> 2014-2017 </td>");		
 		out.println("<td> 	Vinh Linh High School </td>");	
-		out.println("<td rowspan = \"4\" > Quang Tri </td>");
+		out.println("<td rowspan = \"4\" > Quảng Trị </td>");
 		out.println("</tr>");
 		
 		out.println("<tr>");
