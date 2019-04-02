@@ -12,28 +12,13 @@ public class MyStudies extends HttpServlet{
 	
 	@Override
 	protected void service (HttpServletRequest request, HttpServletResponse response) throws IOException {
+		response.setContentType("text/html; charset=UTF-8");
+		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title>My Studies</title>");
-		
-		out.println("<style>");
-		out.println("table {\r\n" + 
-				"  border-collapse: collapse;\r\n" + 
-				"  width: 100%;\r\n" + 
-				"}");
-		out.println("td,th{\r\n" + 
-				"  border: 1px solid #000;\r\n" + 
-				"  text-align: left;\r\n" + 
-				"  padding: 8px;\r\n" + 
-				"}");
-		out.println("th{\r\n" + 
-				"  text-align: center;\r\n" + 
-				"  background-color: #79FFAF;\r\n" + 
-				"}");
-
-		out.println("</style>");
-		
+		out.println("<link rel=\"stylesheet\"  type=\"text/css\" href=\"css/studies.css\">");		
 		out.println("</head>");
 		
 		out.println("<body>");
@@ -57,7 +42,7 @@ public class MyStudies extends HttpServlet{
 		out.println("<tr>");
 		out.println("<td> 2017-Now </td>");		
 		out.println("<td> VNUK University </td>");	
-		out.println("<td > Da Nang </td>");
+		out.println("<td > Đà Nẵng </td>");
 		out.println("<td rowspan = \"5\"> Viet Nam </td>");
 		out.println("</tr>");
 		
