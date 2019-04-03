@@ -11,12 +11,23 @@
   </welcome-file-list>
   
    <servlet>
- 	<servlet-name> servletMyStudies </servlet-name>
- 	<servlet-class> vn.edu.vnuk.record.servlet.MyStudies</servlet-class>
- </servlet>
- <servlet-mapping>
-	<servlet-name> servletMyStudies</servlet-name>
-	<url-pattern> /studies</url-pattern>
- </servlet-mapping>
+ 		<servlet-name> servletMyStudies </servlet-name>
+ 		<servlet-class> vn.edu.vnuk.record.servlet.MyStudies</servlet-class>
+ 	</servlet>
+	<servlet-mapping>
+		<servlet-name> servletMyStudies</servlet-name>
+		<url-pattern> /studies</url-pattern>
+	</servlet-mapping>
+ 
+ 
+ 	<error-page>
+ 		<error-code>404</error-code>
+ 		<location>/404.html</location>
+ 	</error-page>
+ 	
+ 	<error-page>
+ 		<exception-type>java.lang.Exception</exception-type>
+ 		<location>/error.html</location>
+ 	</error-page>
 </web-app>
 
