@@ -20,7 +20,7 @@ public class ContactDao {
 	
 	public void create(Contact contact) throws SQLException {
 		
-		String sqlQuery = "insert into contacts (name, email, address, date_of_register) "
+		String sqlQuery = "insert into contacts (name, email, address, date_of_birth) "
                 +	"values (?, ?, ?, ?)";
 		
 		PreparedStatement statement;
@@ -33,7 +33,7 @@ public class ContactDao {
             statement.setString(2, contact.getEmail());
             statement.setString(3, contact.getAddress());
             statement.setDate(4, new java.sql.Date(
-                            contact.getDateOfRegister().getTimeInMillis()));
+                            contact.getDateOfBirth().getTimeInMillis()));
 
             // 	Executing statement
 			statement.execute();
@@ -200,8 +200,8 @@ public List<Contact> read() throws SQLException{
 		contact.setEmail(results.getString("email"));
 		
 		Calendar calendar = Calendar.getInstance();
-		calendar.setTime(results.getDate("date_of_register"));
-		contact.setDateOfRegister(calendar);
+		calendar.setTime(results.getDate("date_of_birth"));
+		contact.setDateOfBirth(calendar);
 		return contact;
 	}
 }

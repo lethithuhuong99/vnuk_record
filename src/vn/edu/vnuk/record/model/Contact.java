@@ -7,7 +7,7 @@ public class Contact {
 	private String name;
 	private String email;
 	private String address;
-	private Calendar dateOfRegister;
+	private Calendar dateOfBirth;
 	
 	
 	public Long getId() {
@@ -34,11 +34,11 @@ public class Contact {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Calendar getDateOfRegister() {
-		return dateOfRegister;
+	public Calendar getDateOfBirth() {
+		return dateOfBirth;
 	}
-	public void setDateOfRegister(Calendar dateOfRegister) {
-		this.dateOfRegister = dateOfRegister;
+	public void setDateOfBirth(Calendar dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
 	}
 	
 }

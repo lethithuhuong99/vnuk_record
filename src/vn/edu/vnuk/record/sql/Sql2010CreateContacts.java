@@ -15,7 +15,7 @@ public class Sql2010CreateContacts {
 				+ 	"name VARCHAR(255) NOT NULL, "
 				+ 	"email VARCHAR(255) NOT NULL, "
 				+ 	"address VARCHAR(255) NOT NULL, "
-				+ 	"date_of_register DATE NOT NULL"
+				+ 	"date_of_birth DATE NOT NULL"
 				+ ");"
 			;
 	}

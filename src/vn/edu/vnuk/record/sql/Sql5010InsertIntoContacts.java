@@ -13,7 +13,7 @@ public class Sql5010InsertIntoContacts {
 	public Sql5010InsertIntoContacts(Connection connection) {
 		this.connection = connection;
 		
-		this.sqlQuery = "insert into contacts (name, email, address, date_of_register) "
+		this.sqlQuery = "insert into contacts (name, email, address, date_of_birth) "
                 +	"values (?, ?, ?, ?)";
 	}
 	
