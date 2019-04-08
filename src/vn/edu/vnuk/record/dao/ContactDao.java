@@ -165,10 +165,10 @@ public List<Contact> read() throws SQLException{
 		String sqlQuery = "delete from contacts where id = " + id + ";" ;
 		
 		PreparedStatement statement;
-		Contact contact = new Contact();
+		//Contact contact = new Contact();
 		
 		try {
-			contact = read(id);
+		//	contact = read(id);
 			statement = connection.prepareStatement(sqlQuery);
 	        
 			int checkExist = statement.executeUpdate();
