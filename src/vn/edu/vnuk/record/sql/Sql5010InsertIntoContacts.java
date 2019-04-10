@@ -28,9 +28,9 @@ public class Sql5010InsertIntoContacts {
 			statement = connection.prepareStatement(sqlQuery);
 
             //	Replacing "?" through values
-            statement.setString(1, "Clue System");
+            statement.setString(1, "Thu Hương");
             statement.setString(2, "clue.system@success.com");
-            statement.setString(3, "Forever clue");
+            statement.setString(3, "Đà Nẵng");
             statement.setDate(4, new java.sql.Date(
                             Calendar.getInstance().getTimeInMillis()
                     )

@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConnectionFactory {
 	
 	public Connection getConnection() {
-		return returnConnection("jdbc:mysql://localhost/vnuk");
+		return returnConnection("jdbc:mysql://localhost/vnuk?useUnicode=true&characterEncoding=UTF-8");
 	}
 	
 	

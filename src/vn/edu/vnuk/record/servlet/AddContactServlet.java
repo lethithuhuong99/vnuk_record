@@ -57,10 +57,10 @@ public class AddContactServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		out.println("<html>");
-		out.println("<body>");
-		out.println("contact " + contact.getName() + " successfully added!");
-		out.println("</body>");
-		out.println("</html>");
+//		out.println("<html>");
+//		out.println("<body>");
+//		out.println("Contact " + contact.getName() + " successfully added!");
+//		out.println("</body>");
+//		out.println("</html>");
 	}
 }

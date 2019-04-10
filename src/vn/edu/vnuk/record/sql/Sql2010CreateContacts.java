@@ -10,13 +10,13 @@ public class Sql2010CreateContacts {
 	public Sql2010CreateContacts(Connection connection) {
 		this.connection = connection;
 		
-		this.sqlQuery = "CREATE TABLE IF NOT EXISTS contacts ("
+		this.sqlQuery = "CREATE TABLE IF NOT EXISTS contacts  ("
 				+ 	"id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, "
 				+ 	"name VARCHAR(255) NOT NULL, "
 				+ 	"email VARCHAR(255) NOT NULL, "
 				+ 	"address VARCHAR(255) NOT NULL, "
 				+ 	"date_of_birth DATE NOT NULL"
-				+ ");"
+				+ ") CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 			;
 	}
 	
